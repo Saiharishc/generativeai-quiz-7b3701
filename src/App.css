@@ -1,0 +1,124 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.App-header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.App-header h1 {
+  color: #007bff;
+}
+
+main {
+  display: flex;
+  gap: 30px;
+}
+
+.topics-section, .quizzes-section, .search-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.topics-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.quizzes-section {
+  flex: 2;
+}
+
+.search-section {
+  flex: 1.5;
+}
+
+.topics-section h2, .quizzes-section h2, .search-section h2 {
+  margin-top: 0;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.topics-section ul, .quizzes-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.topics-section li, .quizzes-section li {
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.topics-section li:hover, .quizzes-section li:hover {
+  background-color: #e9ecef;
+}
+
+.topics-section li.selected {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.search-section form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-section input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-section button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-section button:hover {
+  background-color: #218838;
+}
+
+.quizzes-section h3, .search-section h3 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.quizzes-section h4 {
+  color: #007bff;
+  margin-top: 15px;
+}
+
+.quizzes-section p {
+  line-height: 1.6;
+}
